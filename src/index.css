@@ -55,7 +55,14 @@
 @layer utilities {
 
   .max-xl-padding-x{
-    @apply sm:px-16 max-xl:px-8;
+    @apply max-xl:px-8 sm:px-16;
+  }
+  .xl-padding-l{
+    @apply xl:pl-8;
+  }
+
+  .wide-padding-r{
+    @apply wide:pr-8;
   }
 
   .padding {
