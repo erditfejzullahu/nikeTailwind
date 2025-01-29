@@ -1,8 +1,14 @@
 import React from 'react'
+import { services } from '../constants'
+import ServiceCard from '../components/ServiceCard'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <section className="max-container flex justify-center felx-wrap gap-9">
+      {services.map((item) => (
+        <ServiceCard key={item.label} {...item}/>
+      ))}
+    </section>
   )
 }
 
