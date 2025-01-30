@@ -39,6 +39,16 @@
   --shadow-3xl: 0 10px 40px rgba(0, 0, 0, 0.1);
   --color-mint-5000: oklch(0.72 0.11 178); /* color */
   --breakpoint-wide: 1440px;
+
+  --animation-fade: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
 }
 
 @layer components {
@@ -53,7 +63,9 @@
 }
 
 @layer utilities {
-
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
   .max-xl-padding-x{
     @apply max-xl:px-8 sm:px-16;
   }
